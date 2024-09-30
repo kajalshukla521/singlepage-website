@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Website</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to external CSS file -->
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="content">
+                <div class="logo">
+                    <img src="/images/Logo.png" alt="Logo">
+                    <h1>La Appetit Maison</h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Full-width Image -->
+    <section class="hero">
+        <img src="/images/banner.png" alt="Restaurant Banner">
+    </section>
+
+    <!-- Categories Section -->
+    <div class="container">
+        <h2>Restaurant Categories</h2>
+        <div class="grid">
+            
+            <a href="/cookies" class="card">
+                <img src="images/cookie.png" alt="Cookies" class="card-image">
+                <div class="card-content">
+                    <h3>Cookies</h3>
+                </div>
+            </a>
+            <a href="/cake" class="card">
+                <img src="images/chocolatecake.png" alt="Cake" class="card-image">
+                <div class="card-content">
+                    <h3>Cake</h3>
+                </div>
+            </a>
+            <a href="/icecream" class="card">
+                <img src="images/icecream.png" alt="Ice-cream" class="card-image">
+                <div class="card-content">
+                    <h3>Ice-cream</h3>
+                </div>
+            </a>
+            
+            <a href="/sandwich" class="card">
+                <img src="images/sandwhich.png" alt="Sandwich" class="card-image">
+                <div class="card-content">
+                    <h3>Sandwich</h3>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <!-- Cards Section - The "Menu" Section -->
+   
+    <section class="menu-cards">
+        <div>
+            <h2 style="text-align: center; margin: 0;">Our Menu</h2>
+        </div>
+        <div class="cards">
+            <!-- First Row of Cards -->
+            <div class="card">
+                <img src="images/chhola.png" alt="Dish Image">
+                <h3>Chole</h3>
+                <p>A delicious recipe description goes here.</p>
+            </div>
+            <div class="card">
+                <img src="images/dosa.png" alt="Dish Image">
+                <h3>Dosa</h3>
+                <p>Another amazing recipe description goes here.</p>
+            </div>
+            <div class="card">
+                <img src="images/idli.png" alt="Dish Image">
+                <h3>Idli</h3>
+                <p>A tasty and flavorful dish description goes here.</p>
+            </div>
+    
+            <!-- Second Row of Cards -->
+            <div class="card">
+                <img src="images/paneer.png" alt="Dish Image">
+                <h3>Paneer</h3>
+                <p>Delicious dish with a great taste.</p>
+            </div>
+        </div>
+    </section>
+    
+    
+
+
+
+
+
+    <!-- About Us Section -->
+    <section class="about-us">
+        <div class="about">
+            <div class="image-wrapper">
+                <img src="images/about.png" class="pic" />
+            </div>
+            <div class="text">
+                <h2>About Us</h2>
+                <h5>Front-end Developer & <span>Designer</span></h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita natus ad sed harum itaque ullam enim quas, veniam accusantium, quia animi id eos adipisci iusto molestias asperiores explicabo cum vero atque amet corporis! Soluta illum facere consequuntur magni. Ullam dolorem repudiandae cumque voluptate consequatur consectetur, eos provident necessitatibus reiciendis corrupti!</p>
+                <div class="data">
+                    <a href="#" class="hire">Hire Me</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+
+
+
+
+
+
+    <!-- Contact Section -->
+   
+    <div class="custom-container">
+    <div class="custom-header">
+        <h1>Contact My Restaurant</h1>
+    </div>
+
+    <!-- Custom Cards Section -->
+    <div class="custom-cards-section">
+        <div class="custom-card">
+            <div class="custom-icon" style="color: skyblue;">&#9993;</div>
+            <h2>Email</h2>
+            <p>help@myrest.com</p>
+        </div>
+        <div class="custom-card">
+            <div class="custom-icon" style="color: green;">&#9742;</div>
+            <h2>Phone</h2>
+            <p>123-456-7890</p>
+        </div>
+        <div class="custom-card">
+            <div class="custom-icon" style="color: red;">&#x1f4cd;</div>
+            <h2>Address</h2>
+            <p>123 Main Street, Mumbai, Maharashtra, India</p>
+        </div>
+    </div>
+
+    <!-- Custom Map and Contact Form Section -->
+    <div class="custom-contact-section">
+        <!-- Google Map -->
+        <div class="custom-map">
+            <iframe
+                title="Google Map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241317.11609905906!2d72.741101908111!3d19.08219783951657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b63c08fbb341%3A0x29d7391e40e77f9c!2sMumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1630832392077!5m2!1sen!2sin"
+                width="100%"
+                height="100%"
+                style="border: 0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+
+        <!-- Custom Contact Form -->
+        <div class="custom-contact-form">
+            <h2>Contact Us</h2>
+            <form>
+                <input type="text" placeholder="Name" required />
+                <input type="email" placeholder="Email" required />
+                <input type="tel" placeholder="Phone" required />
+                <textarea placeholder="Message" rows="4" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 My Restaurant. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

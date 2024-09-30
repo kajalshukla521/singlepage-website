@@ -1,0 +1,335 @@
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 20px;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: black;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.content {
+    display: flex;
+    align-items: center; /* Vertically center the items */
+    justify-content: space-between; /* Space between logo and nav */
+    padding: 10px; /* Add some padding for spacing */
+    font-size: large;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 57px;
+    height: 57px;
+    margin-right: 10px; /* Add spacing between logo and title */
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 10px; /* Space between menu items */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+/* Hero Section */
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+
+
+
+/* Grid Layout for Categories */
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Responsive grid */
+    gap: 124px; /* Space between cards */
+    padding: 20px; /* Padding around the grid */
+}
+
+
+
+
+/* Card Styles */
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 250px; /* Fixed width */
+    height: 300px; /* Fixed height */
+    margin: 10px; /* Maintain margin for spacing */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    display: flex; /* Make card a flex container */
+    flex-direction: column; /* Arrange content vertically */
+    align-items: center; /* Center content horizontally */
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%; /* Fit the card width */
+    height: 60%; /* Maintain aspect ratio */
+}
+
+/* Menu Cards Section */
+.menu-cards {
+    background-color: #eaeaea;
+    padding: 20px 0;
+    display: flex; /* Flexbox to center content */
+    justify-content: center; /* Centering the cards section */
+}
+
+/* Cards Container */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid */
+    gap: 30px; /* Space between cards */
+    max-width: 1200px; /* Max width for the cards */
+    width: 100%; /* Full width for responsive layout */
+    padding: 0 20px; /* Optional: Add padding to the sides of the grid */
+    justify-content: center; /* Center the cards in the grid */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* About Us Section */
+.about-us {
+    background-image: url('path/to/your/background/image.jpg');
+    background-size: cover; /* Ensure the background image covers the entire section */
+    background-position: center; /* Center the background image */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    padding: 40px 20px;
+}
+
+.about {
+    max-width: 1200px; /* Max width for the about section */
+    width: 100%; /* Full width */
+    display: flex;
+    align-items: center; /* Align items vertically */
+}
+
+.image-wrapper {
+    flex: 0 0 auto; /* Maintain fixed width for image */
+    margin-right: 20px; /* Spacing between image and text */
+}
+
+.pic {
+    width: 300px; /* Fixed width for image */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.text {
+    max-width: 600px; /* Max width for text */
+    text-align: center; /* Center text content */
+}
+
+.data {
+    margin-top: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .about {
+        flex-direction: column; /* Stack image on top of text on smaller screens */
+        text-align: center; /* Center text content on smaller screens */
+    }
+    .image-wrapper {
+        margin-bottom: 20px; /* Space between image and text on smaller screens */
+    }
+    .pic {
+        width: 100%; /* Make image full width on smaller screens */
+        max-width: 300px; /* Limit maximum width of the image */
+    }
+}
+
+
+
+
+
+
+
+
+/* Contact Section */
+/* Custom Container Styling */
+.custom-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f4f9;
+}
+
+.custom-header {
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Custom Cards Section */
+.custom-cards-section {
+    display: flex;
+    justify-content: space-around; /* Space around cards */
+    gap: 20px; /* Gap between cards */
+    flex-wrap: wrap;
+    margin: 20px 0; /* Margin for spacing */
+}
+
+.custom-card {
+    flex: 1 1 calc(30% - 20px); /* Responsive width for cards */
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.custom-card:hover {
+    transform: translateY(-5px); /* Hover effect */
+}
+
+.custom-icon {
+    font-size: 40px; /* Adjust icon size */
+    margin-bottom: 10px; /* Space between icon and text */
+}
+
+/* Custom Contact Section */
+.custom-contact-section {
+    display: flex;
+    justify-content: space-between; /* Space between map and form */
+    margin: 20px 0; /* Margin for spacing */
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.custom-map {
+    flex: 2 1 60%; /* Adjusted width for map */
+    height: 500px; /* Height for map */
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.custom-contact-form {
+    flex: 1 1 35%; /* Adjusted width for form */
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.custom-contact-form h2 {
+    text-align: center;
+}
+
+.custom-contact-form input, 
+.custom-contact-form textarea {
+    width: 100%; /* Full width for input fields */
+    padding: 10px; /* Padding for comfort */
+    margin: 10px 0; /* Margin for spacing */
+    border: 1px solid #ccc; /* Border for input fields */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.custom-contact-form button {
+    padding: 10px;
+    border: 2px solid #3498db; /* Button border */
+    background-color: #3498db; /* Button background */
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.custom-contact-form button:hover {
+    background-color: #fff; /* Change background on hover */
+    color: #3498db; /* Change text color on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .custom-cards-section {
+        flex-direction: column;
+    }
+
+    .custom-card {
+        flex: 1 1 100%;
+    }
+
+    .custom-contact-section {
+        flex-direction: column; /* Stack map and form vertically */
+    }
+
+    .custom-map, 
+    .custom-contact-form {
+        width: 100%; /* Full width on smaller screens */
+        flex: 1 1 100%; /* Ensure it takes full width */
+    }
+}
+
+
+
+/* Footer */
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
